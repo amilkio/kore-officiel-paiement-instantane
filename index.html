@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kore Officiel Paiement Instantané - Leader Maurice</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial; }
+body { background:#0A0A0A; color:#fff; text-align:center; }
+.container { max-width:600px; margin:0 auto; padding:20px; }
+.header { padding:30px 20px; background:linear-gradient(135deg,#FFD700,#FFA500); color:#000; border-radius:15px; margin-bottom:20px; }
+.header h1 { font-size:26px; font-weight:bold; margin-bottom:10px; }
+.header p { font-size:14px; line-height:1.5; }
+.btn { display:block; width:100%; padding:15px; margin:15px 0; background:#FFD700; color:#000; text-decoration:none; font-weight:bold; font-size:18px; border-radius:10px; border:none; cursor:pointer; }
+.section { background:#1A1A1A; padding:25px 20px; border-radius:15px; margin-bottom:20px; border:1px solid #FFD700; }
+.section h2 { color:#FFD700; font-size:22px; margin-bottom:15px; }
+.step { background:#2A2A2A; padding:12px; margin:10px 0; border-radius:8px; border-left:4px solid #FFD700; text-align:left; font-weight:bold; }
+form input { width:100%; padding:14px; margin:10px 0; border-radius:8px; border:1px solid #FFD700; background:#2A2A2A; color:#fff; font-size:16px; }
+.footer { font-size:12px; color:#888; padding:20px; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Kore Officiel Paiement Instantané</h1>
+<p>Leader Maurice j'aide toute l'Afrique à gagner d'argent. Paiement instantané MTN, Moov, Orange, Wave, Vodacom, Airtel</p>
+<a href="#formulaire" class="btn">S'INSCRIRE</a>
+</div>
+<div class="section">
+<h2>Paiement Instantané Garanti</h2>
+<p>1 vidéo = 1 paiement instantané. Rejoins maintenant.</p>
+<a href="#formulaire" class="btn">REJOINDRE MAINTENANT</a>
+</div>
+<div class="section">
+<h2>Comment gagner</h2>
+<div class="step">1. Regarder des vidéos</div>
+<div class="step">2. Like + Ajouter aux favoris</div>
+<div class="step">3. Être payé instantanément</div>
+</div>
+<div class="section" id="formulaire">
+<h2>Inscris-toi maintenant</h2>
+<form onsubmit="sendToWhatsApp(); return false;">
+<input type="text" id="nom" placeholder="Nom complet" required>
+<input type="text" id="pays" placeholder="Pays" required>
+<input type="tel" id="whatsapp" placeholder="Numéro WhatsApp" required>
+<input type="email" id="gmail" placeholder="Adresse Gmail" required>
+<button type="submit" class="btn">S'INSCRIRE</button>
+</form>
+</div>
+<div class="footer">© 2026 Kore Officiel Paiement Instantané - Leader Maurice - +229 55 18 06 16</div>
+</div>
+<script>
+function sendToWhatsApp(){
+var nom=document.getElementById('nom').value;
+var pays=document.getElementById('pays').value;
+var whatsapp=document.getElementById('whatsapp').value;
+var gmail=document.getElementById('gmail').value;
+var message=`Bonjour Leader Maurice, je viens de m'inscrire sur Kore Officiel Paiement Instantané%0A%0ANom: ${nom}%0APays: ${pays}%0AWhatsApp: ${whatsapp}%0AGmail: ${gmail}`;
+var url=`https://wa.me/22955180616?text=${message}`;
+window.open(url,'_blank');
+}
+</script>
+</body>
+  </html>
